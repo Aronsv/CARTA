@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Cafetería 6:30</title>
 
 <style>
+
 body{
-font-family: Arial, sans-serif;
-background:#f5f5f5;
+background:#0f0f0f;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -16,44 +19,101 @@ height:100vh;
 margin:0;
 }
 
-.card{
-background:white;
-padding:40px;
-border-radius:15px;
+.container{
 text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+max-width:420px;
+padding:30px;
+}
+
+.logo{
+width:160px;
+margin-bottom:15px;
 }
 
 h1{
-margin-bottom:10px;
+margin:10px 0;
+font-weight:600;
 }
 
-p{
-color:#666;
+.address{
+color:#c9c9c9;
+font-size:14px;
+margin-bottom:20px;
 }
 
-a{
-display:inline-block;
-margin-top:20px;
-padding:15px 30px;
+.menu-btn{
+display:block;
 background:#6b4f3b;
 color:white;
 text-decoration:none;
-border-radius:8px;
+padding:16px;
+border-radius:10px;
+margin:25px 0;
 font-size:18px;
+font-weight:bold;
 }
+
+.social{
+display:flex;
+justify-content:center;
+gap:22px;
+margin-top:10px;
+}
+
+.social img{
+width:44px;
+height:44px;
+}
+
+.footer{
+margin-top:35px;
+font-size:12px;
+color:#888;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="card">
-<h1>Cafetería 6:30</h1>
-<p>Consulta nuestra carta actual</p>
+<div class="container">
 
-<a href="CAFETERIA630.pdf" target="_blank">
-Ver Carta
+<img src="logo.png" class="logo">
+
+<h1>Cafetería 6:30</h1>
+
+<div class="address">
+Jr. Guillermo Urrelo 855<br>
+Cajamarca, Perú
+</div>
+
+<a class="menu-btn" href="menu.pdf" target="_blank">
+Ver Menú
 </a>
+
+<div class="social">
+
+<a href="https://maps.app.goo.gl/UfpQj8Vd4ywQBbYs9" target="_blank">
+<img src="maps.png">
+</a>
+
+<a href="https://www.instagram.com/cafeteria6.30cajamarca" target="_blank">
+<img src="instagram.png">
+</a>
+
+<a href="https://wa.me/51997476508" target="_blank">
+<img src="whatsapp.png">
+</a>
+
+<a href="https://www.facebook.com/cafeteria6.30" target="_blank">
+<img src="facebook.png">
+</a>
+
+</div>
+
+<div class="footer">
+© Cafetería 6:30
+</div>
 
 </div>
 
